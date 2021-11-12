@@ -1,0 +1,45 @@
+
+* {
+  box-sizing: border-box;
+  width: max-content;
+}
+
+.container{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 20px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 50px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+h1 {
+  //background: rgb(128, 65, 65);
+  text-align: center;
+  width: 100%;
+  
+}
+
+.div-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* min-height: 100vh; */
+  min-height: 1px;
+}
